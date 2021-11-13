@@ -4,6 +4,12 @@ Change MAC Address manually/Crontab:
 	sudo apt install macchanger -y
 (Virtual Machines don't inherit the Host's MAC address)
 
+## SERIAL NUMBERS
+
+- dmidecode -t <option>
+- lshw --class 'disk' (Or other options)
+- VM have a different SN than Hosts
+
 # ACM
 (Access control model)
 - Discretionary Access Control (DAC)
