@@ -4,17 +4,11 @@ To-do:
 
 ---
 
-- Checar comandos y propiedades de Git para verificar firmas, etc.
-
-# Lecture ?7- Debugging and profiling
-
-Link: https://missing.csail.mit.edu/2020/debugging-profiling/
-
-### Debuggers, profilers:
+## General use Debuggers & profilers:
 
 **GDB : PWNDBG**
 
-Aplicación python -> se descarga de github, se instala y es accionado en .gdbinit
+Python application -> Github -> Activation via .gdbinit
 
 **PYTHON DEBUGGERS**
 
@@ -28,7 +22,7 @@ pdb my_program.py
 
 2.- IPDB 
 
-- Improved pdb
+- **I**mproved pdb
 
 ```bash
 pip3 install ipdb
@@ -41,21 +35,21 @@ python -m ipdb my_program.py
 
 (ALE TOOLS):
 
-- Install i.e. flake8 o pyflake
+- Install i.e. flake8 or pyflake
 - .vimrc -> ale tools (Plug 'w0rp/ale')
-- Se configura en .vimrc 
-- ALEToggle (on/off)
+- .vimrc configured
+- `ALEToggle` (on/off)
 
 ### Time - user/real/sys
 
 ```bash
-argandov@hydra:~/code$ cat time.py
+user@host:~/code$ cat time.py
 #!/usr/bin/python
 
 import time
 
 time.sleep(7)
-argandov@hydra:~/code$ time python3 time.py
+user@host:~/code$ time python3 time.py
 
 real	0m7.034s
 user	0m0.023s
@@ -65,7 +59,7 @@ sys	0m0.008s
 **PERF: Tracing Program stats:**
 
 ```bash
-root : /home/argandov/code >> perf stat python3 shell.py
+root : /home/user/code >> perf stat python3 shell.py
 # sleep 2
 # exit
 
