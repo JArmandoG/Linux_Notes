@@ -25,15 +25,18 @@ lshw --class 'disk' (Or other options)
 # ACM
 (Access control model)
 - Discretionary Access Control (DAC)
-A discreción del usuario (sudo, permisos, privilegios), con base a ficheros & usuarios. Modelo: Sujeto / Objeto.
+Sudo, Wheel/sudoers - User/administrator's decision. Subject - Object model
 
 - NDAC - Non-discretionary Access Control
 - RBAC - Role-Based Access Control (Grupos)
 
 - MAC - Mandatory Access Control 
-Grupos y Sujetos/Accesos. Etiquetas de objetos en base a privilegios (Top Secret, etc.), "clearance". Ejemplo: SELinux
+Groups & Subjects/Accesses. Privileged access model object by clearance. Example: `SELinux`
 
 # SECURITY FRAMEWORKS
+
+[Firejail, SELinux, AppArmor](https://www.youtube.com/watch?v=JFjXvIwAeVI&t=23s)
+
 
 Frameworks, Software, Modules
 
@@ -43,7 +46,7 @@ Frameworks, Software, Modules
 Easiest to setup. Lightweight. 
 
 	SELinux -> Implements MAC model
-Limits permissions of programs/users. Fuerte administrativo. Para sistemas estáticos.
+Limits permissions of programs/users. Static servers. HEAVY ADMINISTRATION.
 
 	GrSecurity -> Low configuration. Not default. 
 Link: https://micahflee.com/2016/01/debian-grsecurity/ (Comprensivo)
